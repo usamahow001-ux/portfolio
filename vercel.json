@@ -1,6 +1,15 @@
 {
-  "version": 2,
   "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/portfolio.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
