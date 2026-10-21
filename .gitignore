@@ -1,0 +1,12 @@
+# System & OS
+.DS_Store
+Thumbs.db
+
+# Backups & Temp files
+*.bak
+*.tmp
+*_backup.jpg
+check_*.py
+
+# Logs
+*.log

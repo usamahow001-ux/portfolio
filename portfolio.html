@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  
+  <title>Muhammad Usama Ali | Lead Mobile Engineer — ByteFrame Studio</title>
+  <meta name="description" content="Official portfolio of Muhammad Usama Ali. Lead Mobile Engineer at ByteFrame Studio. Android & Flutter developer with 3M+ Google Play Store downloads.">
+  <meta name="author" content="Muhammad Usama Ali">
+  <meta name="theme-color" content="#07090E">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Muhammad Usama Ali | Lead Mobile Engineer — ByteFrame Studio">
+  <meta property="og:description" content="Android & Flutter Engineer with 3M+ Play Store downloads. High-performance mobile architectures and scalable apps.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://byteframestudio.com/portfolio.html">
+  <meta property="og:image" content="assets/images/usama-profile.jpg">
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- ByteFrame Studio Cyber-Luxe Theme Stylesheet -->
+  <link rel="stylesheet" href="agency.css?v=8">
+</head>
+<body>
+
+  <!-- Opening Screen Brand Reveal -->
+  <div id="site-preloader" class="site-preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrap">
+        <img src="assets/images/byteframe-icon.png" alt="ByteFrame Studio" class="preloader-logo-img">
+        <div class="preloader-glow-ring"></div>
+      </div>
+      <div class="preloader-brand-title">
+        Muhammad <span class="preloader-accent">Usama Ali</span>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill"></div>
+      </div>
+      <div class="preloader-tagline">Lead Mobile Engineer • 3M+ Downloads</div>
+    </div>
+  </div>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div class="studio-scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       STICKY NAVIGATION
+       ========================================================================= -->
+  <div class="north-nav-root">
+    <header id="navbar" class="north-nav">
+      <div class="north-nav-inner">
+        <!-- Brand Link -->
+        <a href="index.html" class="north-brand" aria-label="Return to ByteFrame Studio Home" title="Return to Agency Home">
+          <div class="brand-icon-mark">
+            <img src="assets/images/byteframe-icon.png" alt="ByteFrame Studio Logo" class="brand-logo-img">
+          </div>
+          <span class="brand-title">Byte<span class="brand-accent">Frame</span> <span class="brand-light">Studio</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="north-desktop-nav" aria-label="Main Navigation">
+          <a href="#hero" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Right Actions -->
+        <div class="north-nav-actions">
+          <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Theme">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+          </button>
+
+          <a href="public/Muhammad_Usama_Ali_Android_Flutter_Resume.pdf" download class="north-button" style="padding: 10px 20px; font-size: 13.5px;">
+            <i class="fa-solid fa-download"></i> Get CV
+          </a>
+
+          <button type="button" class="north-menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="north-mobile-layer" id="mobile-drawer" inert aria-hidden="true">
+      <button class="north-mobile-backdrop" id="drawer-backdrop" type="button" aria-label="Dismiss navigation"></button>
+      <div id="mobile-navigation" role="dialog" aria-modal="true" aria-label="Site navigation" class="north-mobile-panel">
+        <div class="north-mobile-top">
+          <div class="mobile-brand-title">
+            <img src="assets/images/byteframe-icon.png" alt="ByteFrame Studio Logo" class="mobile-brand-icon">
+            <span>Byte<span class="brand-accent">Frame</span> <span class="brand-light">Studio</span></span>
+          </div>
+          <button type="button" class="ac-dialog-close" id="drawer-close" aria-label="Close navigation">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <nav aria-label="Mobile navigation">
+          <a href="#hero"><span>01</span> Home <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#about"><span>02</span> About <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#projects"><span>03</span> Work <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#skills"><span>04</span> Skills <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#experience"><span>05</span> Experience <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#contact"><span>06</span> Contact <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="index.html" style="color: var(--accent); font-weight: 700;"><span>07</span> ByteFrame Agency <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </nav>
+
+        <div class="north-mobile-bottom">
+          <a href="public/Muhammad_Usama_Ali_Android_Flutter_Resume.pdf" download class="north-button" style="width: 100%;">
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- =========================================================================
+         01 / HERO SECTION
+         ========================================================================= -->
+    <section id="hero" class="north-hero">
+      <div class="north-hero-halo" aria-hidden="true"></div>
+
+      <div class="north-hero-inner portfolio-hero-grid">
+        <!-- Hero Copy -->
+        <div class="portfolio-hero-copy">
+          <p class="north-eyebrow">
+            <span></span> LEAD MOBILE ENGINEER @ BYTEFRAME STUDIO
+          </p>
+
+          <h1>Muhammad<br/><span>Usama Ali</span></h1>
+
+          <p class="north-hero-description">
+            Mobile Application Engineer with <strong>2.5+ years of production experience</strong> specializing in Android (Kotlin) and Flutter (Dart). Built and scaled apps reaching over <strong>3,000,000+ downloads on Google Play Store</strong> with 99.9% crash-free stability.
+          </p>
+
+          <div class="north-hero-actions">
+            <a href="#projects" class="north-button">
+              Explore Top Projects
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 7h10v10"></path>
+                <path d="M7 17 17 7"></path>
+              </svg>
+            </a>
+
+            <a href="public/Muhammad_Usama_Ali_Android_Flutter_Resume.pdf" download class="north-link">
+              <i class="fa-solid fa-file-arrow-down"></i> Technical CV
+            </a>
+          </div>
+
+          <!-- Key Metrics -->
+          <div class="portfolio-stats-row">
+            <div class="portfolio-stat-box">
+              <div class="portfolio-stat-num">3M+</div>
+              <div class="portfolio-stat-label">Play Store Downloads</div>
+            </div>
+            <div class="portfolio-stat-box">
+              <div class="portfolio-stat-num">2.5+</div>
+              <div class="portfolio-stat-label">Years Experience</div>
+            </div>
+            <div class="portfolio-stat-box">
+              <div class="portfolio-stat-num">99.9%</div>
+              <div class="portfolio-stat-label">Crash-Free Sessions</div>
+            </div>
+            <div class="portfolio-stat-box">
+              <div class="portfolio-stat-num">BS CS</div>
+              <div class="portfolio-stat-label">FUUAST University</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Avatar Card -->
+        <div class="portfolio-avatar-card">
+          <img src="assets/images/usama-profile.jpg?v=2" alt="Muhammad Usama Ali" class="portfolio-avatar-img">
+          <div style="margin-top: 14px; text-align: center;">
+            <strong style="display: block; font-size: 17px; color: var(--text);">Muhammad Usama Ali</strong>
+            <span style="font-size: 13px; color: var(--accent); font-family: var(--font-mono);">Android • Flutter • Systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         02 / ABOUT SECTION
+         ========================================================================= -->
+    <section id="about" class="home-section">
+      <div class="home-content">
+        <div class="north-centered-heading">
+          <span class="north-panel-number">PHILOSOPHY &amp; APPROACH</span>
+          <h2>Clean architecture.<br/><span>Built for millions of users.</span></h2>
+          <p>
+            I specialize in crafting high-efficiency mobile apps that boot fast, handle spotty connectivity seamlessly, and deliver smooth 60fps UX across all device tiers.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px;">
+          <div class="skill-deck-card">
+            <h3><i class="fa-solid fa-bolt"></i> High Performance</h3>
+            <p style="font-size: 14.5px; color: var(--text-muted); line-height: 1.6;">
+              Optimized cold-start latency by 40% across production apps, utilizing Coroutines, background threading, and efficient memory profiling.
+            </p>
+          </div>
+          <div class="skill-deck-card">
+            <h3><i class="fa-solid fa-cubes"></i> Scalable Architecture</h3>
+            <p style="font-size: 14.5px; color: var(--text-muted); line-height: 1.6;">
+              Adhering to strict MVVM and Clean Architecture patterns, keeping UI decoupled from business logic and ensuring frictionless testability.
+            </p>
+          </div>
+          <div class="skill-deck-card">
+            <h3><i class="fa-solid fa-shield-halved"></i> Reliable &amp; Stable</h3>
+            <p style="font-size: 14.5px; color: var(--text-muted); line-height: 1.6;">
+              Maintained a 99.9% crash-free benchmark across 3,000,000+ app installs via proactive error boundary handling and Firebase Crashlytics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         03 / FEATURED PROJECTS (TOP 3 ONLY)
+         ========================================================================= -->
+    <section id="projects" class="home-section home-services">
+      <div class="home-content">
+        <div class="north-centered-heading">
+          <span class="north-panel-number">PROVEN WORK</span>
+          <h2>Featured Mobile Apps.<br/><span>Shipped to production.</span></h2>
+          <p>
+            High-impact applications actively serving millions of users on Google Play Store.
+          </p>
+        </div>
+
+        <div class="home-work-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px;">
+          <!-- Project 1 -->
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="assets/images/project-buksh-apps.jpg" alt="Buksh Apps Productivity Suite">
+            </div>
+            <div class="work-card-body">
+              <div>
+                <div class="work-card-badge-line">
+                  <span class="badge-live-pulse">Google Play Store</span>
+                  <span>3M+ Installs</span>
+                </div>
+                <h3>Buksh Apps Fleet</h3>
+                <p>
+                  High-utility Android &amp; Flutter productivity suite. Designed modular reactive architecture, Room DB local caching, and Firebase real-time telemetry.
+                </p>
+              </div>
+              <div>
+                <div class="work-tags">
+                  <span>Kotlin</span>
+                  <span>Flutter</span>
+                  <span>Room DB</span>
+                  <span>Firebase</span>
+                  <span>MVVM</span>
+                </div>
+                <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" class="north-link">
+                  View on Play Store <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="assets/images/project-dashcam-speedo.jpg" alt="Dashcam GPS Speedometer">
+            </div>
+            <div class="work-card-body">
+              <div>
+                <div class="work-card-badge-line">
+                  <span class="badge-live-pulse">Sensor Fusion</span>
+                  <span>CameraX &amp; GPS</span>
+                </div>
+                <h3>Dashcam &amp; GPS Speedometer</h3>
+                <p>
+                  Real-time automotive telemetry application. Combines background CameraX video recording with hardware GPS fusion and zero-loss offline trip logging.
+                </p>
+              </div>
+              <div>
+                <div class="work-tags">
+                  <span>Android SDK</span>
+                  <span>Kotlin</span>
+                  <span>CameraX</span>
+                  <span>FusedLocation</span>
+                  <span>Coroutines</span>
+                </div>
+                <a href="#contact" class="north-link">
+                  Technical Architecture <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="assets/images/project-pdf-editor.jpg" alt="Pro PDF Editor & Converter">
+            </div>
+            <div class="work-card-body">
+              <div>
+                <div class="work-card-badge-line">
+                  <span class="badge-live-pulse">Document Engine</span>
+                  <span>On-Device OCR</span>
+                </div>
+                <h3>Pro PDF Editor &amp; Converter</h3>
+                <p>
+                  Native document management tool supporting instant PDF conversions, fast vector annotation rendering, secure local encryption, and compression.
+                </p>
+              </div>
+              <div>
+                <div class="work-tags">
+                  <span>Flutter</span>
+                  <span>Dart</span>
+                  <span>Native NDK</span>
+                  <span>Document OCR</span>
+                  <span>Riverpod</span>
+                </div>
+                <a href="#contact" class="north-link">
+                  Technical Architecture <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Additional Live Apps From CV -->
+        <div style="margin-top: 32px; padding: 20px 24px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <strong style="display: block; font-size: 15px; color: var(--text);">Additional Live Apps &amp; Internal Builds:</strong>
+            <span style="font-size: 13.5px; color: var(--text-muted);">Jobs Shopper (5K+ downloads) • Quran App • Gym &amp; Fitness Trainer</span>
+          </div>
+          <span class="badge-live-pulse" style="font-size: 13px;">Play Store Shipped</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         04 / TECHNICAL SKILLS (CLEAN & SIMPLE)
+         ========================================================================= -->
+    <section id="skills" class="home-section">
+      <div class="home-content">
+        <div class="north-centered-heading">
+          <span class="north-panel-number">CORE EXPERTISE</span>
+          <h2>Technical Arsenal.<br/><span>Focused on results.</span></h2>
+          <p>
+            The specialized toolset I use daily to build robust, scalable applications.
+          </p>
+        </div>
+
+        <div class="skills-deck-grid">
+          <!-- Column 1: Mobile -->
+          <div class="skill-deck-card">
+            <h3><i class="fa-solid fa-mobile-screen-button"></i> Mobile Platforms</h3>
+            <div class="skill-tags-deck">
+              <span class="skill-tag-pill">Android SDK</span>
+              <span class="skill-tag-pill">Kotlin</span>
+              <span class="skill-tag-pill">Flutter</span>
+              <span class="skill-tag-pill">Dart</span>
+              <span class="skill-tag-pill">Jetpack Compose</span>
+              <span class="skill-tag-pill">Coroutines / Flow</span>
+              <span class="skill-tag-pill">CameraX</span>
+              <span class="skill-tag-pill">State Management</span>
+            </div>
+          </div>
+
+          <!-- Column 2: Architecture -->
+          <div class="skill-deck-card">
+            <h3><i class="fa-solid fa-network-wired"></i> Architecture &amp; Data</h3>
+            <div class="skill-tags-deck">
+              <span class="skill-tag-pill">MVVM</span>
+              <span class="skill-tag-pill">Clean Architecture</span>
+              <span class="skill-tag-pill">RESTful APIs</span>
+              <span class="skill-tag-pill">Retrofit</span>
+              <span class="skill-tag-pill">Firebase Suite</span>
+              <span class="skill-tag-pill">Room Database</span>
+              <span class="skill-tag-pill">Offline Sync</span>
+              <span class="skill-tag-pill">WorkManager</span>
+            </div>
+          </div>
+
+          <!-- Column 3: Quality & Tools -->
+          <div class="skill-deck-card">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Quality &amp; Tools</h3>
+            <div class="skill-tags-deck">
+              <span class="skill-tag-pill">Git / GitHub</span>
+              <span class="skill-tag-pill">Play Console Publishing</span>
+              <span class="skill-tag-pill">Crashlytics</span>
+              <span class="skill-tag-pill">CI/CD Pipelines</span>
+              <span class="skill-tag-pill">Memory Profiler</span>
+              <span class="skill-tag-pill">ProGuard / R8</span>
+              <span class="skill-tag-pill">Figma Hand-off</span>
+              <span class="skill-tag-pill">Unit Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         05 / PRODUCTION EXPERIENCE
+         ========================================================================= -->
+    <section id="experience" class="home-approach section-dark-contrast">
+      <div class="home-content">
+        <div class="north-centered-heading">
+          <span class="north-panel-number" style="color: var(--accent);">CAREER TRACK</span>
+          <h2 style="color: #FFFFFF;">Work Experience.<br/><span>Tested in production.</span></h2>
+          <p style="color: #94A3B8;">
+            Track record of building and maintaining production apps under heavy user loads.
+          </p>
+        </div>
+
+        <div class="timeline-deck">
+          <!-- Experience 1: 7 King Codes -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div>
+                <div class="timeline-role">Android &amp; Flutter Developer</div>
+                <div class="timeline-company">7 King Codes • DHA Phase 8 Lahore, Pakistan</div>
+              </div>
+              <span class="timeline-period">April 2025 — Present</span>
+            </div>
+            <ul>
+              <li>Developing high-performance production apps using Kotlin, Flutter, Firebase, REST APIs, MVVM, Room DB, and Google Maps.</li>
+              <li>Implementing robust API integration, resilient error handling, and scalable reactive data flow architecture.</li>
+              <li>Managing multiple active apps, ensuring 99.9% crash-free stability, code quality, and smooth feature releases.</li>
+              <li>Optimized application performance, reducing cold load times by 40%+ across several client projects.</li>
+            </ul>
+          </div>
+
+          <!-- Experience 2: Grape Technology -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div>
+                <div class="timeline-role">Android Developer (Junior)</div>
+                <div class="timeline-company">Grape Technology • Giga Mall, Islamabad, Pakistan</div>
+              </div>
+              <span class="timeline-period">May 2024 — March 2025</span>
+            </div>
+            <ul>
+              <li>Developed and maintained production apps, ensuring optimal execution performance and fluid user experience.</li>
+              <li>Built feature-rich PDF Editor and DashCam video applications from scratch.</li>
+              <li>Engineered advanced PDF page annotations, text highlighting, text insertion, watermarking, and split/merge PDF modules.</li>
+              <li>Implemented Coroutines, OSMdroid maps, Natario camera library, and Room DB for real-time location tracking and speedometer features.</li>
+            </ul>
+          </div>
+
+          <!-- Experience 3: AppTrick Technology -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div>
+                <div class="timeline-role">Android Development (Internship)</div>
+                <div class="timeline-company">AppTrick Technology • Shamsabad, Rawalpindi, Pakistan</div>
+              </div>
+              <span class="timeline-period">Jan 2023 — Aug 2023</span>
+            </div>
+            <ul>
+              <li>Developed and maintained Android applications using Kotlin, building complete feature modules end-to-end.</li>
+              <li>Integrated CameraX and Natario camera libraries for capturing high-definition video feeds and snapshots.</li>
+              <li>Integrated OSMdroid maps with Room Database to record and store live user trip histories.</li>
+              <li>Designed vehicle Speedometer and speed accelerator UI/UX, ensuring high responsiveness and code quality standards.</li>
+            </ul>
+          </div>
+
+          <!-- Academic Education Expandable Dropdown (Collapsed by default, zero vertical scroll bloat) -->
+          <div class="edu-dropdown-card" id="edu-dropdown-card">
+            <button type="button" class="edu-dropdown-toggle" id="edu-toggle" aria-expanded="false" aria-controls="edu-pane">
+              <div class="edu-toggle-left">
+                <div class="edu-toggle-icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <strong>Academic Education</strong>
+                  <span>BS Computer Science • FUUAST (2019 — 2023)</span>
+                </div>
+              </div>
+              <div class="edu-toggle-action">
+                <span class="edu-toggle-hint">Click to expand</span>
+                <i class="fa-solid fa-chevron-down edu-chevron"></i>
+              </div>
+            </button>
+
+            <div class="edu-dropdown-pane" id="edu-pane">
+              <div class="edu-pane-content">
+                <div class="edu-pane-header">
+                  <div>
+                    <h4>Bachelor of Science in Computer Science (BS CS)</h4>
+                    <p class="edu-pane-uni">Federal Urdu University of Arts, Science &amp; Technology (FUUAST)</p>
+                    <span class="edu-pane-loc"><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</span>
+                  </div>
+                  <span class="timeline-period">2019 — 2023</span>
+                </div>
+
+                <div class="education-side-divider"></div>
+
+                <div class="education-highlights">
+                  <div><i class="fa-solid fa-check"></i> 4-Year Formal CS Foundation</div>
+                  <div><i class="fa-solid fa-check"></i> Advanced Mobile Architectures, OOP &amp; Data Structures</div>
+                  <div><i class="fa-solid fa-check"></i> Relational Databases, Networks &amp; Operating Systems</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         06 / RESUME & CONTACT SECTION
+         ========================================================================= -->
+    <section id="contact" class="home-section home-contact">
+      <div class="home-content">
+        <div class="north-contact-panel">
+          <div class="north-contact-orb"></div>
+
+          <div class="home-contact-grid">
+            <!-- Left Info -->
+            <div>
+              <span class="north-panel-number">START A CONVERSATION</span>
+              <h2>Let’s build something<br/><span>that works.</span></h2>
+              <p>
+                Whether you have an Android/Flutter project brief, need code architecture consulting, or want to discuss engineering roles, reach out directly.
+              </p>
+
+              <!-- Resume Download Strip (Technical CV Only) -->
+              <div class="resume-download-strip">
+                <a href="public/Muhammad_Usama_Ali_Android_Flutter_Resume.pdf" download class="north-button">
+                  <i class="fa-solid fa-file-arrow-down"></i> Download Technical CV (PDF)
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Direct Action -->
+            <div class="home-founder-note">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+
+              <p>
+                <strong>Direct Founder Communication.</strong> No middle managers or recruiters. Talk directly with the lead engineer.
+              </p>
+
+              <div class="north-founder-line">
+                <img src="assets/images/usama-profile.jpg?v=2" alt="Muhammad Usama Ali" class="home-founder-avatar-img">
+                <div>
+                  <strong>Muhammad Usama Ali</strong>
+                  <span>Lead Mobile Engineer • ByteFrame Studio</span>
+                </div>
+              </div>
+
+              <div class="founder-quick-actions" style="margin-top: 10px;">
+                <a href="https://wa.me/923404779596" target="_blank" rel="noopener noreferrer" class="north-button" style="padding: 10px 18px; font-size: 13.5px;">
+                  <i class="fa-brands fa-whatsapp"></i> WhatsApp Direct
+                </a>
+                <a href="mailto:u3345ali@gmail.com" class="north-button-secondary" style="padding: 10px 18px; font-size: 13.5px;">
+                  <i class="fa-regular fa-envelope"></i> Email Usama
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       07 / FOOTER
+       ========================================================================= -->
+  <footer id="footer" class="home-footer">
+    <div class="home-content">
+      <div class="home-footer-top">
+        <a class="north-brand" href="#hero" aria-label="ByteFrame Studio Home">
+          <div class="brand-icon-mark">
+            <img src="assets/images/byteframe-icon.png" alt="ByteFrame Studio Logo" class="brand-logo-img">
+          </div>
+          <span class="brand-title">Byte<span class="brand-accent">Frame</span> <span class="brand-light">Studio</span></span>
+        </a>
+
+        <nav aria-label="Footer navigation">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <a href="index.html">Agency Site ↗</a>
+        </nav>
+      </div>
+
+      <div class="home-footer-bottom">
+        <p>&copy; 2026 Muhammad Usama Ali • ByteFrame Studio. Thoughtfully designed. Carefully built.</p>
+
+        <div class="home-footer-socials">
+          <a href="https://wa.me/923404779596" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://github.com/MuhammadUsamaAli" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <div class="home-footer-legal">
+          <a href="#hero" class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       LIGHTWEIGHT ENGINE
+       ========================================================================= -->
+  <script>
+    // Preloader Dismiss
+    function hidePreloader() {
+      const preloader = document.getElementById('site-preloader');
+      if (preloader && !preloader.classList.contains('loaded')) {
+        preloader.classList.add('loaded');
+      }
+    }
+    window.addEventListener('load', () => setTimeout(hidePreloader, 400));
+    setTimeout(hidePreloader, 950);
+
+    // Dynamic Tab Title
+    const originalDocTitle = document.title;
+    window.addEventListener('blur', () => {
+      document.title = '⚡ Usama Ali | Lead Mobile Engineer';
+    });
+    window.addEventListener('focus', () => {
+      document.title = originalDocTitle;
+    });
+
+    // Scroll Progress & Nav Scroll Spy
+    const scrollProgress = document.getElementById('scroll-progress');
+    const desktopNavLinks = document.querySelectorAll('.north-desktop-nav a');
+    const pageSections = document.querySelectorAll('section[id]');
+
+    function updateNavScroll() {
+      const scrollY = window.pageYOffset;
+      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = totalScroll > 0 ? (scrollY / totalScroll) * 100 : 0;
+      if (scrollProgress) scrollProgress.style.width = `${progress}%`;
+
+      const checkPoint = scrollY + 120;
+      let currentSectionId = '';
+      pageSections.forEach(sec => {
+        if (checkPoint >= sec.offsetTop) {
+          currentSectionId = sec.getAttribute('id');
+        }
+      });
+      if (currentSectionId) {
+        desktopNavLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${currentSectionId}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    }
+
+    window.addEventListener('scroll', updateNavScroll, { passive: true });
+    updateNavScroll();
+
+    desktopNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        desktopNavLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+
+    // Theme Toggle (Synchronized with index.html)
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('byteframe_theme_cyber', theme);
+      if (themeIcon) {
+        themeIcon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+      }
+    }
+
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme') || 'dark';
+        const next = current === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+      });
+    }
+
+    const savedTheme = localStorage.getItem('byteframe_theme_cyber') || 'dark';
+    applyTheme(savedTheme);
+
+    // Mobile Drawer
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    const drawerBackdrop = document.getElementById('drawer-backdrop');
+    const drawerClose = document.getElementById('drawer-close');
+
+    function toggleDrawer(open) {
+      if (!mobileDrawer) return;
+      if (open) {
+        mobileDrawer.classList.add('open');
+        mobileDrawer.removeAttribute('inert');
+        mobileDrawer.setAttribute('aria-hidden', 'false');
+      } else {
+        mobileDrawer.classList.remove('open');
+        mobileDrawer.setAttribute('inert', '');
+        mobileDrawer.setAttribute('aria-hidden', 'true');
+      }
+    }
+
+    if (menuToggle) menuToggle.addEventListener('click', () => toggleDrawer(true));
+    if (drawerClose) drawerClose.addEventListener('click', () => toggleDrawer(false));
+    if (drawerBackdrop) drawerBackdrop.addEventListener('click', () => toggleDrawer(false));
+
+    mobileDrawer?.querySelectorAll('nav a').forEach(a => {
+      a.addEventListener('click', () => toggleDrawer(false));
+    });
+
+    // Academic Education Expandable Dropdown
+    const eduToggle = document.getElementById('edu-toggle');
+    const eduCard = document.getElementById('edu-dropdown-card');
+    if (eduToggle && eduCard) {
+      eduToggle.addEventListener('click', () => {
+        const isOpen = eduCard.classList.toggle('open');
+        eduToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Back to top
+    const backToTop = document.getElementById('back-to-top');
+    if (backToTop) {
+      backToTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  </script>
+</body>
+</html>

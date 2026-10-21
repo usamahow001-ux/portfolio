@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  
+  <title>ByteFrame Studio | High-Performance Software &amp; Mobile Ecosystems</title>
+  <meta name="description" content="We engineer scalable mobile apps, intelligent web platforms, and mission-critical cloud software systems with military precision. 3M+ downloads shipped.">
+  <meta name="author" content="Muhammad Usama Ali — ByteFrame Studio">
+  <meta name="theme-color" content="#07090E">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="ByteFrame Studio | High-Performance Software &amp; Mobile Ecosystems">
+  <meta property="og:description" content="We engineer scalable mobile apps, intelligent web platforms, and mission-critical cloud software systems with military precision.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://byteframestudio.com">
+  <meta property="og:image" content="assets/images/byteframe-logo.png">
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- ByteFrame Studio Cyber-Luxe Theme Stylesheet -->
+  <link rel="stylesheet" href="agency.css?v=8">
+</head>
+<body>
+
+  <!-- Opening Screen Brand Reveal ("When website is open") -->
+  <div id="site-preloader" class="site-preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrap">
+        <img src="assets/images/byteframe-icon.png" alt="ByteFrame Studio" class="preloader-logo-img">
+        <div class="preloader-glow-ring"></div>
+      </div>
+      <div class="preloader-brand-title">
+        Byte<span class="preloader-accent">Frame</span> <span class="preloader-sub">Studio</span>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill"></div>
+      </div>
+      <div class="preloader-tagline">Websites • Apps • Software</div>
+    </div>
+  </div>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div class="studio-scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       HEADER / NAVIGATION ("NORTH NAV")
+       ========================================================================= -->
+  <div class="north-nav-root">
+    <header id="navbar" class="north-nav">
+      <div class="north-nav-inner">
+        <!-- Brand Link -->
+        <a href="#home" class="north-brand" aria-label="ByteFrame Studio Home">
+          <div class="brand-icon-mark">
+            <img src="assets/images/byteframe-icon.png" alt="ByteFrame Studio Logo" class="brand-logo-img">
+          </div>
+          <span class="brand-title">Byte<span class="brand-accent">Frame</span> <span class="brand-light">Studio</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="north-desktop-nav" aria-label="Main Navigation">
+          <a href="#home" class="active">Home</a>
+          <a href="#starting-point">Starting Point</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Right Actions -->
+        <div class="north-nav-actions">
+          <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Theme">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+          </button>
+
+          <a href="#contact" class="north-button north-nav-cta">
+            Start a project
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </a>
+
+          <button type="button" class="north-menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Menu Modal -->
+    <div class="north-mobile-layer" id="mobile-drawer" inert aria-hidden="true">
+      <button class="north-mobile-backdrop" id="drawer-backdrop" type="button" aria-label="Dismiss navigation"></button>
+      <div id="mobile-navigation" role="dialog" aria-modal="true" aria-label="Site navigation" class="north-mobile-panel">
+        <div class="north-mobile-top">
+          <div class="mobile-brand-title">
+            <img src="assets/images/byteframe-icon.png" alt="ByteFrame Studio Logo" class="mobile-brand-icon">
+            <span>Byte<span class="brand-accent">Frame</span> <span class="brand-light">Studio</span></span>
+          </div>
+          <button type="button" class="ac-dialog-close" id="drawer-close" aria-label="Close navigation">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <nav aria-label="Mobile navigation">
+          <a href="#home"><span>01</span> Home <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#starting-point"><span>02</span> Starting Point <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#services"><span>03</span> Services <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#about"><span>04</span> About <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#work"><span>05</span> Work <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#faq"><span>06</span> FAQ <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="#contact"><span>07</span> Contact <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="portfolio.html" style="color: var(--accent); font-weight: 700;"><span>08</span> Founder CV &amp; Bio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </nav>
+
+        <div class="north-mobile-bottom">
+          <a href="#contact" class="north-button" style="width: 100%;">
+            Start a project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a href="mailto:u3345ali@gmail.com" style="font-size: 13.5px; color: var(--text-muted); text-align: center;">
+            u3345ali@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- =========================================================================
+         HERO SECTION ("NORTH HERO")
+         ========================================================================= -->
+    <section id="home" class="north-hero">
+      <div class="north-hero-halo" aria-hidden="true"></div>
+
+      <div class="north-hero-inner">
+        <!-- Hero Copy -->
+        <div class="north-hero-copy">
+          <p class="north-eyebrow">
+            <span></span> DIGITAL PRODUCTS. CONNECTED THINKING.
+          </p>
+
+          <h1>Great ideas.<br/><span>Built to scale.</span></h1>
+
+          <p class="north-hero-description">
+            Websites, apps, and software that help your business grow. Thoughtfully designed. Reliably built. With you from day one.
+          </p>
+
+          <div class="north-hero-actions">
+            <a href="#contact" class="north-button">
+              Let’s build something
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 7h10v10"></path>
+                <path d="M7 17 17 7"></path>
+              </svg>
+            </a>
+
+            <a href="#work" class="north-link">
+              Explore our work
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <a href="#starting-point" class="north-explore">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14"></path>
+                <path d="m19 12-7 7-7-7"></path>
+              </svg>
+            </span>
+            A little further down. A clearer way forward.
+          </a>
+        </div>
+
+        <!-- ByteFrame 3D Cybernetic Engine Visual (Single Primary Color Theme) -->
+        <div class="byteframe-stage" aria-label="ByteFrame 3D Interactive Architecture Engine">
+          <!-- Atmospheric Radial Glow -->
+          <div class="byte-stage-glow" aria-hidden="true"></div>
+
+          <!-- Rotating Cyber Orbits -->
+          <div class="byte-stage-orbit byte-orbit-one" aria-hidden="true"></div>
+          <div class="byte-stage-orbit byte-orbit-two" aria-hidden="true"></div>
+
+          <!-- 3D ByteFrame Image Stage -->
+          <div class="byte-stage-viewport">
+            <!-- Cyber Corner HUD Brackets -->
+            <div class="byte-bracket byte-bracket-tl" aria-hidden="true"></div>
+            <div class="byte-bracket byte-bracket-tr" aria-hidden="true"></div>
+            <div class="byte-bracket byte-bracket-bl" aria-hidden="true"></div>
+            <div class="byte-bracket byte-bracket-br" aria-hidden="true"></div>
+
+            <!-- Glowing ByteFrame 3D Asset -->
+            <img src="assets/images/byteframe-hero.jpg" alt="ByteFrame Studio 3D Interactive Cybernetic Core" class="byte-hero-img" width="440" height="440">
+            <div class="byte-scanline" aria-hidden="true"></div>
+          </div>
+
+          <!-- Top Status Chip (Single Primary Color) -->
+          <div class="byte-chip-top">
+            <span class="byte-status-indicator" aria-hidden="true"></span>
+            <span>BYTEFRAME // CORE ACTIVE</span>
+            <span class="byte-chip-pill">v3.4</span>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- Hero Foot Bar -->
+      <div class="north-hero-foot">
+        <p>Different skills.<br/><strong>One connected team.</strong></p>
+        <div class="hero-foot-pills">
+          <span>Web &amp; mobile</span>
+          <span>Digital experiences</span>
+          <span>Business software</span>
+        </div>
+        <a href="#about" class="north-link">
+          Meet the founder
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 7h10v10"></path>
+            <path d="M7 17 17 7"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         01 / STARTING POINT TABS SECTION
+         ========================================================================= -->
+    <section id="starting-point" class="home-section home-starting-point">
+      <div class="home-content">
+        <div class="home-section-heading north-centered-heading">
+          <p class="home-kicker">01 / FIND YOUR STARTING POINT</p>
+          <h2>Big plans.<br/><span>A simple place to start.</span></h2>
+          <p>Wherever you are with it, we can take the next step together.</p>
+        </div>
+
+        <!-- 3 Interactive Switcher Tabs -->
+        <div class="starting-point-tabs" role="group" aria-label="Choose your project starting point">
+          <button type="button" class="active" data-tab="idea" id="tab-btn-idea">
+            <i class="fa-regular fa-lightbulb"></i> I have an idea
+          </button>
+          <button type="button" data-tab="refresh" id="tab-btn-refresh">
+            <i class="fa-solid fa-arrows-rotate"></i> I need a refresh
+          </button>
+          <button type="button" data-tab="flow" id="tab-btn-flow">
+            <i class="fa-solid fa-diagram-project"></i> Our work could flow better
+          </button>
+        </div>
+
+        <!-- Dynamic Detail Panel -->
+        <div id="starting-point-detail" class="starting-point-detail" aria-live="polite">
+          <div class="starting-point-copy" id="tab-copy">
+            <span class="north-panel-number">01 / A WAY FORWARD</span>
+            <h3 id="tab-heading">Let’s find the useful part.</h3>
+            <p id="tab-desc">
+              You don’t need a polished brief. Tell us who it’s for and what you’d like to change. We’ll help you decide what to build first.
+            </p>
+            <a href="#contact" class="north-button">
+              Let’s work it out
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 7h10v10"></path>
+                <path d="M7 17 17 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="starting-point-map">
+            <div class="north-map-heading">
+              <span id="tab-badge">ONE STEP AT A TIME</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <ol id="tab-steps">
+              <li>
+                <span>01</span>
+                <strong>Talk through the problem</strong>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li>
+                <span>02</span>
+                <strong>Choose the first version</strong>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li>
+                <span>03</span>
+                <strong>Agree on scope and next steps</strong>
+                <i class="fa-solid fa-check" style="color: var(--pos);"></i>
+              </li>
+            </ol>
+            <p id="tab-footnote">A starting point, even if it’s still on a scrap of paper.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         02 / DESIGN + ENGINEERING SERVICES ("NORTH OFFER GRID")
+         ========================================================================= -->
+    <section id="services" class="home-section home-services">
+      <div class="home-content">
+        <div class="home-section-heading">
+          <div>
+            <p class="home-kicker">02 / DESIGN + ENGINEERING</p>
+            <h2>The right build.<br/><span>For the job in hand.</span></h2>
+          </div>
+          <a class="north-link" href="#work">
+            All our services
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="home-offer-grid">
+          <!-- Offer Card 01: Web -->
+          <a class="home-offer" href="#contact">
+            <div>
+              <div class="home-offer-top">
+                <span class="north-service-icon">
+                  <i class="fa-solid fa-globe fa-lg"></i>
+                </span>
+                <span>01</span>
+              </div>
+              <h3>A better home for your business.</h3>
+              <p>Websites and storefronts that make it easy to understand what you do, find what matters, and get in touch.</p>
+            </div>
+            <div class="north-offer-bottom">
+              <span class="home-offer-detail">Websites / E-commerce / Next.js / TypeScript</span>
+              <span class="north-round-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Offer Card 02: Mobile Apps -->
+          <a class="home-offer" href="#work">
+            <div>
+              <div class="home-offer-top">
+                <span class="north-service-icon">
+                  <i class="fa-solid fa-mobile-screen fa-lg"></i>
+                </span>
+                <span>02</span>
+              </div>
+              <h3>An app with a purpose.</h3>
+              <p>Web and mobile products built around what people actually need to do. Clear screens. Fewer dead ends. 3,000,000+ downloads shipped.</p>
+            </div>
+            <div class="north-offer-bottom">
+              <span class="home-offer-detail">Mobile applications / Android &amp; iOS / Flutter &amp; Kotlin</span>
+              <span class="north-round-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Offer Card 03: Custom Software & AI -->
+          <a class="home-offer" href="#contact">
+            <div>
+              <div class="home-offer-top">
+                <span class="north-service-icon">
+                  <i class="fa-solid fa-network-wired fa-lg"></i>
+                </span>
+                <span>03</span>
+              </div>
+              <h3>Less busywork. More flow.</h3>
+              <p>Tools that connect your systems, devices, and data, so your team can spend less time moving things around.</p>
+            </div>
+            <div class="north-offer-bottom">
+              <span class="home-offer-detail">Business software / APIs / Integrations / OpenAI</span>
+              <span class="north-round-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         03 / PEOPLE BEFORE PROCESS ("DARK CONTRAST SECTION")
+         ========================================================================= -->
+    <section id="about" data-theme="dark" class="home-section home-approach">
+      <div class="home-content">
+        <div class="home-approach-grid">
+          <div>
+            <p class="home-kicker">03 / PEOPLE BEFORE PROCESS</p>
+            <h2>You’ll know<br/><span>who’s building it.</span></h2>
+            <p class="home-approach-intro">
+              Talk directly to the designers and developers doing the work. Ask questions, see working progress, and have a say in the details. That’s how we like to work.
+            </p>
+            <a class="north-link" href="portfolio.html">
+              View founder technical CV
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 7h10v10"></path>
+                <path d="M7 17 17 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="home-expectations">
+            <div class="home-expectation">
+              <span><i class="fa-solid fa-check"></i></span>
+              <div>
+                <h3>A clear starting point</h3>
+                <p>Scope, priorities, and milestones agreed before the build starts.</p>
+              </div>
+            </div>
+
+            <div class="home-expectation">
+              <span><i class="fa-solid fa-check"></i></span>
+              <div>
+                <h3>Something real to review</h3>
+                <p>Working demos and honest conversations as your product takes shape.</p>
+              </div>
+            </div>
+
+            <div class="home-expectation">
+              <span><i class="fa-solid fa-check"></i></span>
+              <div>
+                <h3>A proper handover</h3>
+                <p>Documented code, deployment guidance, and a plan for what comes next.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4-Step Process Bar -->
+        <ol id="process" class="home-process" aria-label="Our development process">
+          <li>
+            <div>
+              <span class="home-process-number">01</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <h3>Discover</h3>
+            <p>We talk through the idea, the people using it, and what a useful first version needs to do.</p>
+          </li>
+          <li>
+            <div>
+              <span class="home-process-number">02</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <h3>Design</h3>
+            <p>We map the journeys and design the screens, so you can review the experience before we build.</p>
+          </li>
+          <li>
+            <div>
+              <span class="home-process-number">03</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <h3>Build</h3>
+            <p>We build in stages, show working progress, and test the important paths as we go.</p>
+          </li>
+          <li>
+            <div>
+              <span class="home-process-number">04</span>
+              <i class="fa-solid fa-circle-check" style="color: var(--pos);"></i>
+            </div>
+            <h3>Support</h3>
+            <p>We help with launch, hand over the documentation, and agree on any support you need next.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         04 / SELECTED WORK SECTION
+         ========================================================================= -->
+    <section id="work" class="home-section">
+      <div class="home-content">
+        <div class="home-section-heading">
+          <div>
+            <p class="home-kicker">04 / PROVEN IN PRODUCTION</p>
+            <h2>Good work.<br/><span>Built to scale.</span></h2>
+          </div>
+          <a class="north-link" href="portfolio.html#projects">
+            All case studies &amp; CV
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="home-work-grid">
+          <!-- Project 1: Jobs Shopper -->
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="assets/images/project-buksh-apps.jpg" alt="Jobs Shopper Recruitment Platform" loading="lazy">
+            </div>
+            <div class="work-card-body">
+              <div>
+                <div class="work-card-badge-line">
+                  <span>RECRUITMENT PLATFORM</span>
+                  <span class="badge-live-pulse">LIVE · PLAY STORE</span>
+                </div>
+                <h3>Jobs Shopper — Hiring &amp; Candidate Portal</h3>
+                <p>Dual-role mobile application for recruiters and jobseekers with real-time push via Firebase Cloud Messaging, interview tracking, and BLoC state management.</p>
+              </div>
+              <div>
+                <div class="work-tags">
+                  <span>Flutter</span>
+                  <span>Dart</span>
+                  <span>Django REST</span>
+                  <span>Firebase</span>
+                </div>
+                <a href="portfolio.html#projects" class="north-link">
+                  View in Founder Portfolio
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 7h10v10"></path>
+                    <path d="M7 17 17 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: PDF Creator -->
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="assets/images/project-pdf-editor.jpg" alt="PDF Creator & Annotation Engine" loading="lazy">
+            </div>
+            <div class="work-card-body">
+              <div>
+                <div class="work-card-badge-line">
+                  <span>DOCUMENT ENGINE</span>
+                  <span class="badge-live-pulse">3,000,000+ DOWNLOADS</span>
+                </div>
+                <h3>PDF Creator &amp; Annotation Engine</h3>
+                <p>High-performance native Android application with custom Canvas vector drawing, live annotations, digital signatures, and offline Room database synchronization.</p>
+              </div>
+              <div>
+                <div class="work-tags">
+                  <span>Kotlin</span>
+                  <span>Canvas API</span>
+                  <span>Room DB</span>
+                  <span>MVVM</span>
+                </div>
+                <a href="portfolio.html#projects" class="north-link">
+                  View Case Study
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 7h10v10"></path>
+                    <path d="M7 17 17 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         05 / PRACTICAL DETAILS FAQ ACCORDION ("NORTH FAQ")
+         ========================================================================= -->
+    <section id="faq" class="home-section home-faq">
+      <div class="home-content home-faq-grid">
+        <div>
+          <p class="home-kicker">A FEW PRACTICAL DETAILS</p>
+          <h2>A little clarity.<br/><span>Before we begin.</span></h2>
+          <p class="home-faq-intro">The questions that tend to come up first. We’re happy to talk through the rest.</p>
+          <a class="north-link" href="#contact">
+            Ask a different question
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="home-faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item open">
+            <button type="button" class="faq-question-btn" aria-expanded="true">
+              <span>How do we start a project?</span>
+              <span class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer-pane">
+              <p>Tell us what you have in mind, even if it is still a rough idea. We will ask a few questions, discuss the scope, and put together a proposal with clear next steps and transparent milestones.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Do you offer support after launch?</span>
+              <span class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer-pane">
+              <p>Yes. Warranty coverage is included in your project agreement. We also arrange ongoing retainers for updates, performance optimization, and new features as your product scales.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Can you build a mobile app and a website together?</span>
+              <span class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer-pane">
+              <p>Yes. We build the website, the mobile app, and a unified backend API together. That keeps user accounts, authentication, and database state connected seamlessly while each screen is tailored to its device.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Who will I actually be working with?</span>
+              <span class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer-pane">
+              <p>You work directly with Muhammad Usama Ali and senior engineers. No account managers, no junior handoffs, and no agency bloat. You get direct access to the people writing your code.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         06 / CONTACT SECTION & FOUNDER NOTE ("NORTH CONTACT")
+         ========================================================================= -->
+    <section id="contact" class="home-section home-contact">
+      <div class="home-content">
+        <div class="north-contact-panel">
+          <div class="north-contact-orb" aria-hidden="true"></div>
+
+          <div class="home-contact-grid">
+            <!-- Left: Form -->
+            <div>
+              <p class="home-kicker">YOUR NEXT CHAPTER STARTS WITH A CONVERSATION</p>
+              <h2>What have you<br/><span>got in mind?</span></h2>
+              <p>A rough idea is plenty. Tell us what you’re working on, what’s getting in the way, or where you’d like to go.</p>
+
+              <form id="contact-form" class="contact-form">
+                <div class="contact-field-group">
+                  <div class="field">
+                    <label for="contact-name">Name / Company *</label>
+                    <input type="text" id="contact-name" class="input" placeholder="e.g. Alex Johnson" required>
+                  </div>
+                  <div class="field">
+                    <label for="contact-email">Email or WhatsApp *</label>
+                    <input type="text" id="contact-email" class="input" placeholder="e.g. alex@company.com" required>
+                  </div>
+                </div>
+
+                <div class="contact-field-group">
+                  <div class="field">
+                    <label for="contact-service">Service</label>
+                    <select id="contact-service" class="input">
+                      <option value="Mobile App (Flutter / Android)">Mobile App (Flutter / Android)</option>
+                      <option value="Modern Web Platform (Next.js)">Modern Web Platform</option>
+                      <option value="Custom Business Software & APIs">Custom Software &amp; APIs</option>
+                      <option value="AI Integration & Automation">AI Integration &amp; Automation</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="contact-budget">Budget Target</label>
+                    <select id="contact-budget" class="input">
+                      <option value="$1,000 - $2,500">$1,000 – $2,500</option>
+                      <option value="$2,500 - $5,000" selected>$2,500 – $5,000</option>
+                      <option value="$5,000 - $10,000">$5,000 – $10,000</option>
+                      <option value="$10,000+">$10,000+</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="contact-msg">Project Summary *</label>
+                  <textarea id="contact-msg" class="input" placeholder="What are you building? Tell us about features, timeline, and goals..." required></textarea>
+                </div>
+
+                <button type="submit" class="north-button" style="width: 100%; justify-content: center; padding: 13px;">
+                  Start a conversation
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 7h10v10"></path>
+                    <path d="M7 17 17 7"></path>
+                  </svg>
+                </button>
+
+                <div id="form-feedback" class="feedback-alert" role="alert"></div>
+              </form>
+            </div>
+
+            <!-- Right: Signature Founder Note Card -->
+            <div class="home-founder-note">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
+              </svg>
+
+              <p>Good conversations.<br/><strong>Better beginnings.</strong></p>
+
+              <div class="north-founder-line">
+                <img src="assets/images/usama-profile.jpg?v=2" alt="Muhammad Usama Ali" class="home-founder-avatar-img">
+                <div>
+                  <strong>Muhammad Usama Ali</strong>
+                  <span>Founder &amp; Lead Mobile Engineer</span>
+                </div>
+              </div>
+
+              <p class="home-response-note">
+                Every enquiry is reviewed directly by our lead engineer. Expect a direct reply within 1–2 hours.
+              </p>
+
+              <div class="founder-quick-actions">
+                <a href="https://wa.me/923404779596" target="_blank" rel="noopener noreferrer" class="north-button" style="padding: 10px 20px; font-size: 13.5px;">
+                  <i class="fa-brands fa-whatsapp"></i> WhatsApp Direct
+                </a>
+                <a href="portfolio.html" class="north-link" style="font-size: 13.5px;">
+                  Founder CV &amp; Bio ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       07 / FOOTER ("NORTH FOOTER")
+       ========================================================================= -->
+  <footer id="footer" class="home-footer">
+    <div class="home-content">
+      <div class="home-footer-top">
+        <a class="north-brand" href="#home" aria-label="ByteFrame Studio Home">
+          <div class="brand-icon-mark">
+            <img src="assets/images/byteframe-icon.png" alt="ByteFrame Studio Logo" class="brand-logo-img">
+          </div>
+          <span class="brand-title">Byte<span class="brand-accent">Frame</span> <span class="brand-light">Studio</span></span>
+        </a>
+
+        <nav aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a href="portfolio.html">Founder CV</a>
+        </nav>
+      </div>
+
+      <div class="home-footer-bottom">
+        <p>&copy; 2026 ByteFrame Studio. Thoughtfully designed. Carefully built.</p>
+
+        <div class="home-footer-socials">
+          <a href="https://wa.me/923404779596" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://github.com/MuhammadUsamaAli" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <div class="home-footer-legal">
+          <a href="#home" class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       ANIMATED CODERS INTERACTIVE ENGINE
+       ========================================================================= -->
+  <script>
+    // 0. Website Opening Screen / Preloader Reveal Dismiss
+    function hidePreloader() {
+      const preloader = document.getElementById('site-preloader');
+      if (preloader && !preloader.classList.contains('loaded')) {
+        preloader.classList.add('loaded');
+      }
+    }
+    window.addEventListener('load', () => {
+      setTimeout(hidePreloader, 450);
+    });
+    setTimeout(hidePreloader, 1000);
+
+    // Dynamic Tab Title
+    const originalDocTitle = document.title;
+    window.addEventListener('blur', () => {
+      document.title = '⚡ ByteFrame Studio | Great ideas. Built to scale.';
+    });
+    window.addEventListener('focus', () => {
+      document.title = originalDocTitle;
+    });
+
+    // 1. Scroll Progress Bar & Dynamic Nav Scroll Spy
+    const scrollProgress = document.getElementById('scroll-progress');
+    const desktopNavLinks = document.querySelectorAll('.north-desktop-nav a');
+    const pageSections = document.querySelectorAll('section[id]');
+
+    function updateNavScroll() {
+      const scrollY = window.pageYOffset;
+      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = totalScroll > 0 ? (scrollY / totalScroll) * 100 : 0;
+      if (scrollProgress) scrollProgress.style.width = `${progress}%`;
+
+      // Update active nav link
+      const checkPoint = scrollY + 120;
+      let currentSectionId = '';
+      pageSections.forEach(sec => {
+        if (checkPoint >= sec.offsetTop) {
+          currentSectionId = sec.getAttribute('id');
+        }
+      });
+      if (currentSectionId) {
+        desktopNavLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${currentSectionId}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    }
+
+    window.addEventListener('scroll', updateNavScroll, { passive: true });
+    updateNavScroll();
+
+    desktopNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        desktopNavLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+
+    // 2. Starting Point Tab Switcher Data & Logic
+    const tabData = {
+      idea: {
+        badge: "ONE STEP AT A TIME",
+        heading: "Let’s find the useful part.",
+        desc: "You don’t need a polished brief. Tell us who it’s for and what you’d like to change. We’ll help you decide what to build first.",
+        footnote: "A starting point, even if it’s still on a scrap of paper.",
+        steps: [
+          { num: "01", text: "Talk through the problem", icon: "fa-solid fa-arrow-right" },
+          { num: "02", text: "Choose the first version", icon: "fa-solid fa-arrow-right" },
+          { num: "03", text: "Agree on scope and next steps", icon: "fa-solid fa-check", green: true }
+        ]
+      },
+      refresh: {
+        badge: "RENEW WHAT WORKS",
+        heading: "Modernize without starting from scratch.",
+        desc: "Keep your proven business logic and existing users, but overhaul the speed, UX, and outdated frameworks holding your product back.",
+        footnote: "Audit first. Upgrade safely with zero customer downtime.",
+        steps: [
+          { num: "01", text: "Technical heap & code audit", icon: "fa-solid fa-arrow-right" },
+          { num: "02", text: "Modernize UI & design system", icon: "fa-solid fa-arrow-right" },
+          { num: "03", text: "Ship incremental updates", icon: "fa-solid fa-check", green: true }
+        ]
+      },
+      flow: {
+        badge: "WORKFLOW AUTOMATION",
+        heading: "Less busywork. More actual work.",
+        desc: "Eliminate spreadsheet chaos and repetitive tasks. Connect your mobile apps, internal dashboards, and external APIs with clean automated pipelines.",
+        footnote: "Built around how your team naturally operates.",
+        steps: [
+          { num: "01", text: "Map bottlenecks & manual friction", icon: "fa-solid fa-arrow-right" },
+          { num: "02", text: "Engineer custom sync APIs & AI", icon: "fa-solid fa-arrow-right" },
+          { num: "03", text: "Deploy connected business system", icon: "fa-solid fa-check", green: true }
+        ]
+      }
+    };
+
+    const tabButtons = document.querySelectorAll('.starting-point-tabs button');
+    const tabHeading = document.getElementById('tab-heading');
+    const tabDesc = document.getElementById('tab-desc');
+    const tabBadge = document.getElementById('tab-badge');
+    const tabFootnote = document.getElementById('tab-footnote');
+    const tabSteps = document.getElementById('tab-steps');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const key = btn.getAttribute('data-tab');
+        const data = tabData[key];
+        if (!data) return;
+
+        tabHeading.textContent = data.heading;
+        tabDesc.textContent = data.desc;
+        tabBadge.textContent = data.badge;
+        tabFootnote.textContent = data.footnote;
+
+        tabSteps.innerHTML = data.steps.map(s => `
+          <li>
+            <span>${s.num}</span>
+            <strong>${s.text}</strong>
+            <i class="${s.icon}" ${s.green ? 'style="color: var(--pos);"' : ''}></i>
+          </li>
+        `).join('');
+      });
+    });
+
+    // 3. FAQ Accordion Toggle
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const btn = item.querySelector('.faq-question-btn');
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        faqItems.forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question-btn').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // 4. Dark / Light Theme Toggle with LocalStorage (Defaults to Dark Cyber-Luxe)
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('byteframe_theme_cyber', theme);
+      if (themeIcon) {
+        themeIcon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+      }
+    }
+
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme') || 'dark';
+        const next = current === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+      });
+    }
+
+    const savedTheme = localStorage.getItem('byteframe_theme_cyber') || 'dark';
+    applyTheme(savedTheme);
+
+    // 5. Mobile Navigation Drawer
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    const drawerBackdrop = document.getElementById('drawer-backdrop');
+    const drawerClose = document.getElementById('drawer-close');
+
+    function toggleDrawer(open) {
+      if (!mobileDrawer) return;
+      if (open) {
+        mobileDrawer.classList.add('open');
+        mobileDrawer.removeAttribute('inert');
+        mobileDrawer.setAttribute('aria-hidden', 'false');
+      } else {
+        mobileDrawer.classList.remove('open');
+        mobileDrawer.setAttribute('inert', '');
+        mobileDrawer.setAttribute('aria-hidden', 'true');
+      }
+    }
+
+    if (menuToggle) menuToggle.addEventListener('click', () => toggleDrawer(true));
+    if (drawerClose) drawerClose.addEventListener('click', () => toggleDrawer(false));
+    if (drawerBackdrop) drawerBackdrop.addEventListener('click', () => toggleDrawer(false));
+
+    mobileDrawer?.querySelectorAll('nav a').forEach(a => {
+      a.addEventListener('click', () => toggleDrawer(false));
+    });
+
+    // 6. Direct WhatsApp / Email Action on Form Submit
+    const contactForm = document.getElementById('contact-form');
+    const feedback = document.getElementById('form-feedback');
+
+    if (contactForm && feedback) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('contact-name').value.trim();
+        const contact = document.getElementById('contact-email').value.trim();
+        const service = document.getElementById('contact-service').value;
+        const budget = document.getElementById('contact-budget').value;
+        const msg = document.getElementById('contact-msg').value.trim();
+
+        const text = encodeURIComponent(
+          `Hello ByteFrame Studio!\n\n` +
+          `Project Brief from byteframestudio.com:\n` +
+          `• Name: ${name}\n` +
+          `• Contact: ${contact}\n` +
+          `• Service: ${service}\n` +
+          `• Budget: ${budget}\n\n` +
+          `Message:\n"${msg}"`
+        );
+
+        const waUrl = `https://wa.me/923404779596?text=${text}`;
+        const mailUrl = `mailto:u3345ali@gmail.com?subject=${encodeURIComponent("Project Inquiry: " + service)}&body=${text}`;
+
+        feedback.className = "feedback-alert show";
+        feedback.innerHTML = `
+          <div style="font-weight: 700; margin-bottom: 6px;">
+            <i class="fa-solid fa-circle-check"></i> Project brief prepared!
+          </div>
+          <p style="font-size: 13.5px; margin-bottom: 12px; color: var(--text);">Send directly to Usama via your preferred channel:</p>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="north-button" style="padding: 8px 18px; font-size: 13.5px;">
+              <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+            </a>
+            <a href="${mailUrl}" class="north-button-secondary" style="padding: 8px 18px; font-size: 13.5px;">
+              <i class="fa-regular fa-envelope"></i> Send via Email
+            </a>
+          </div>
+        `;
+      });
+    }
+
+    // 7. Back To Top Button
+    const backToTop = document.getElementById('back-to-top');
+    if (backToTop) {
+      backToTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  </script>
+</body>
+</html>
