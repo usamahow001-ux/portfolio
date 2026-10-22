@@ -357,7 +357,8 @@ section {
   color: var(--text-primary);
 }
 
-/* ByteFrame Studio Navigation Pill in Portfolio */
+/* SevenSpire Code Navigation Pill in Portfolio */
+.sevenspire-nav-badge,
 .byteframe-nav-badge {
   display: inline-flex !important;
   align-items: center;

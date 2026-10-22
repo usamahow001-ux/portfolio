@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BYTEFRAME STUDIO — CYBER-LUXURY ARCHITECT DESIGN SYSTEM
+   SEVENSPIRE CODE — CYBER-LUXURY ARCHITECT DESIGN SYSTEM
    Bespoke high-performance engineering & design identity.
    Obsidian dark matrix canvas, holographic neon cyan/violet accents,
    geometric frame corners, interactive telemetry HUD, and tactile cards.
@@ -9,7 +9,7 @@
 
 :root,
 [data-theme="dark"] {
-  /* Default & Dark Mode: ByteFrame Obsidian & Single Primary Cyan */
+  /* Default & Dark Mode: SevenSpire Obsidian & Single Primary Cyan */
   --bg: #07090E;
   --bg-subtle: #0C101A;
   --surface: #101626;
@@ -816,7 +816,7 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   BYTEFRAME HERO STAGE & 3D CYBERNETIC ENGINE VISUAL
+   SEVENSPIRE HERO STAGE & 3D CYBERNETIC ENGINE VISUAL
    ========================================================================== */
 .byteframe-stage {
   position: relative;
@@ -2158,7 +2158,7 @@ textarea.input {
 }
 
 /* ==========================================================================
-   PORTFOLIO STYLES (MATCHING BYTEFRAME STUDIO THEME)
+   PORTFOLIO STYLES (MATCHING SEVENSPIRE CODE THEME)
    ========================================================================== */
 .portfolio-hero-grid {
   display: grid;
