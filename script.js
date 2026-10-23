@@ -703,7 +703,7 @@
   // Dynamic Tab Title
   const portfolioDocTitle = document.title;
   window.addEventListener("blur", () => {
-    document.title = "⚡ Usama Ali | SevenSpire Code";
+    document.title = "⚡ Usama Ali | ScopeRise Tech";
   });
   window.addEventListener("focus", () => {
     document.title = portfolioDocTitle;

@@ -357,7 +357,8 @@ section {
   color: var(--text-primary);
 }
 
-/* SevenSpire Code Navigation Pill in Portfolio */
+/* ScopeRise Tech Navigation Pill in Portfolio */
+.scoperise-nav-badge,
 .sevenspire-nav-badge,
 .byteframe-nav-badge {
   display: inline-flex !important;

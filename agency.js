@@ -1,5 +1,5 @@
 /**
- * SEVENSPIRE CODE - AGENCY ENGINE & INTERACTIVE CONTROLLERS
+ * SCOPERISE TECH - AGENCY ENGINE & INTERACTIVE CONTROLLERS
  * Clean vanilla JavaScript with real-time project estimator, theme management, and instant chat links.
  */
 
@@ -111,7 +111,7 @@
 
     // Generate WhatsApp CTA
     const waText = encodeURIComponent(
-      `Hello SevenSpire Code! I used your Project Estimator on sevenspirecode.com:\n\n` +
+      `Hello ScopeRise Tech! I used your Project Estimator on scoperisetech.com:\n\n` +
       `• Service: ${srv.name}\n` +
       `• Tier: ${tier.name}\n` +
       `• Speed: ${spd.name}\n` +
@@ -124,10 +124,10 @@
     }
 
     // Generate Email Mailto CTA
-    const emailSubject = encodeURIComponent(`Project Inquiry: ${srv.name} (${tier.name}) - SevenSpire Code`);
+    const emailSubject = encodeURIComponent(`Project Inquiry: ${srv.name} (${tier.name}) - ScopeRise Tech`);
     const emailBody = encodeURIComponent(
-      `Hi Usama & SevenSpire Code Team,\n\n` +
-      `I reviewed your services on sevenspirecode.com and configured this project estimate:\n\n` +
+      `Hi Usama & ScopeRise Tech Team,\n\n` +
+      `I reviewed your services on scoperisetech.com and configured this project estimate:\n\n` +
       `Service: ${srv.name}\n` +
       `Package Tier: ${tier.name}\n` +
       `Timeline: ${timelineStr}\n` +
@@ -179,7 +179,7 @@
       }
 
       const waMessage = encodeURIComponent(
-        `Hello SevenSpire Code!\n\n` +
+        `Hello ScopeRise Tech!\n\n` +
         `New Client Project Inquiry:\n` +
         `• Name: ${name}\n` +
         `• Email/Contact: ${email}\n` +

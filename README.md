@@ -56,7 +56,7 @@ http://localhost:8000
 
 ```
 D:\portifolio\
-├── index.html                 # SevenSpire Code Agency Homepage (Services, Estimator, Leads)
+├── index.html                 # ScopeRise Tech Agency Homepage (Services, Estimator, Leads)
 ├── agency.css                 # Clean modern agency stylesheet with animations & estimator
 ├── agency.js                  # Agency interactive controllers & live quote calculator
 ├── portfolio.html             # Muhammad Usama Ali Detailed Founder Portfolio & CVs
