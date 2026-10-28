@@ -211,7 +211,7 @@
       draw() {
         const isDark = htmlRoot.getAttribute("data-theme") !== "light";
         // Unified single primary cyan color for all particles
-        const color = isDark ? `rgba(0, 240, 255, ${this.alpha})` : `rgba(8, 145, 178, ${this.alpha * 0.6})`;
+        const color = isDark ? `rgba(13, 102, 249, ${this.alpha})` : `rgba(13, 102, 249, ${this.alpha * 0.6})`;
 
         ctx.fillStyle = color;
         ctx.beginPath();
@@ -240,7 +240,7 @@
 
           if (dist < maxDist) {
             const alpha = (1 - dist / maxDist) * (isDark ? 0.08 : 0.04);
-            ctx.strokeStyle = isDark ? `rgba(0, 240, 255, ${alpha})` : `rgba(8, 145, 178, ${alpha})`;
+            ctx.strokeStyle = isDark ? `rgba(13, 102, 249, ${alpha})` : `rgba(13, 102, 249, ${alpha})`;
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
