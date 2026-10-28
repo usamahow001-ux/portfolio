@@ -818,7 +818,7 @@ button, input, select, textarea {
 /* ==========================================================================
    SCOPERISE HERO STAGE & 3D CYBERNETIC ENGINE VISUAL
    ========================================================================== */
-.byteframe-stage {
+.scoperise-stage {
   position: relative;
   display: flex;
   justify-content: center;

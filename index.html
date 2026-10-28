@@ -185,7 +185,7 @@
         </div>
 
         <!-- ScopeRise 3D Cybernetic Engine Visual (Single Primary Color Theme) -->
-        <div class="byteframe-stage" aria-label="ScopeRise 3D Interactive Architecture Engine">
+        <div class="scoperise-stage" aria-label="ScopeRise 3D Interactive Architecture Engine">
           <!-- Atmospheric Radial Glow -->
           <div class="byte-stage-glow" aria-hidden="true"></div>
 
@@ -202,7 +202,7 @@
             <div class="byte-bracket byte-bracket-br" aria-hidden="true"></div>
 
             <!-- Glowing ScopeRise 3D Asset -->
-            <img src="assets/images/byteframe-hero.jpg" alt="ScopeRise Tech 3D Interactive Cybernetic Core" class="byte-hero-img" width="440" height="440">
+            <img src="assets/images/scoperise-hero.jpg" alt="ScopeRise Tech 3D Interactive Cybernetic Core" class="byte-hero-img" width="440" height="440">
             <div class="byte-scanline" aria-hidden="true"></div>
           </div>
 
@@ -933,7 +933,7 @@
 
     function applyTheme(theme) {
       document.documentElement.setAttribute('data-theme', theme);
-      localStorage.setItem('byteframe_theme_cyber', theme);
+      localStorage.setItem('scoperise_theme_cyber', theme);
       if (themeIcon) {
         themeIcon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
       }
@@ -947,7 +947,7 @@
       });
     }
 
-    const savedTheme = localStorage.getItem('byteframe_theme_cyber') || 'dark';
+    const savedTheme = localStorage.getItem('scoperise_theme_cyber') || localStorage.getItem('byteframe_theme_cyber') || 'dark';
     applyTheme(savedTheme);
 
     // 5. Mobile Navigation Drawer

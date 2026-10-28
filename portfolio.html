@@ -726,7 +726,7 @@
 
     function applyTheme(theme) {
       document.documentElement.setAttribute('data-theme', theme);
-      localStorage.setItem('byteframe_theme_cyber', theme);
+      localStorage.setItem('scoperise_theme_cyber', theme);
       if (themeIcon) {
         themeIcon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
       }
@@ -740,7 +740,7 @@
       });
     }
 
-    const savedTheme = localStorage.getItem('byteframe_theme_cyber') || 'dark';
+    const savedTheme = localStorage.getItem('scoperise_theme_cyber') || localStorage.getItem('byteframe_theme_cyber') || 'dark';
     applyTheme(savedTheme);
 
     // Mobile Drawer

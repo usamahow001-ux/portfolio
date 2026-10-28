@@ -13,7 +13,7 @@
   const themeIcon = document.getElementById("theme-icon");
 
   function initTheme() {
-    const saved = localStorage.getItem("byteframe_theme");
+    const saved = localStorage.getItem("scoperise_theme") || localStorage.getItem("byteframe_theme");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     const theme = saved || (prefersDark ? "dark" : "dark"); // Default dark
     setTheme(theme);
@@ -21,7 +21,7 @@
 
   function setTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("byteframe_theme", theme);
+    localStorage.setItem("scoperise_theme", theme);
     if (themeIcon) {
       if (theme === "light") {
         themeIcon.className = "fa-solid fa-sun";

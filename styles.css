@@ -359,8 +359,7 @@ section {
 
 /* ScopeRise Tech Navigation Pill in Portfolio */
 .scoperise-nav-badge,
-.sevenspire-nav-badge,
-.byteframe-nav-badge {
+.sevenspire-nav-badge {
   display: inline-flex !important;
   align-items: center;
   gap: 8px;
@@ -373,14 +372,14 @@ section {
   transition: all var(--transition-normal);
 }
 
-.byteframe-nav-badge:hover {
+.scoperise-nav-badge:hover {
   background: rgba(0, 240, 255, 0.16);
   border-color: var(--color-primary);
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(0, 240, 255, 0.28);
 }
 
-.byteframe-nav-badge img,
+.scoperise-nav-badge img,
 .nav-brand-icon {
   width: 20px;
   height: 20px;
